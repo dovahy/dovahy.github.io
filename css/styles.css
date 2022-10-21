@@ -48,6 +48,11 @@ body
     color: var(--main-color);
     text-decoration: underline;
 }
+.lang-svg
+{
+    width: 20px;
+    height: 16px;
+}
 .short-about-box
 {
     /* Orientation of the boxes */
@@ -78,7 +83,7 @@ body
 .short-about-box-img img
 {
     width: 475px;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 .project-title
 {
@@ -176,4 +181,39 @@ body
     display: inline-block;
     fill: #828282;
     vertical-align: text-bottom;
+}
+
+/* ABOUT ME - PAGE */
+
+.about-me-box
+{
+    max-width: calc(1148px - (30px * 2));
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about-me-p
+{
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+.about-me-box h1
+{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+.about-me-box p
+{
+    padding-top: 20px;
+    color: var(--text-color);
+}
+.about-me-box a
+{
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--main-color);
 }

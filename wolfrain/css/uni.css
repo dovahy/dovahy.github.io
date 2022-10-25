@@ -1,0 +1,98 @@
+@font-face { font-family: WolfsRain; src: url("../WolfsRain.ttf"); }
+
+a {
+	text-decoration: none;
+	color: white;
+	padding-right: 40px;
+	font-size: 30px;
+	font-family: WolfsRain;
+}
+
+a:hover {
+	color: #6882B2;
+}
+
+p {
+	text-align: justify;
+	padding-top: 60px;
+	color: lightgrey;
+	width: 700px;
+	margin: auto;
+
+}
+
+header {
+	text-align: center;
+	width: 1000px;
+	margin: auto;
+}
+
+
+body {
+	background: #1C3040;
+}
+
+footer {
+	color: lightgrey;
+	padding-top: 40px;
+	text-align: center;
+	width: 700px;
+	margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  padding-top: 10px;
+}
+
+.left, .right {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+}
+
+.middle {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+}
+
+.box1 {
+	position: relative;
+	top: 30px;
+	width: 700px;
+	font-weight: bold;
+	margin: auto;
+	color: black;
+	text-align: center;
+	background-color:#5491BF
+}
+
+.recom {
+	position: relative;
+	left: 20px;
+}
+
+.episode1 {
+	color: red;
+	font-family: times;
+	font-size: 16px;
+	padding-top: 60px;
+	color: lightgrey;
+	position: relative;
+	top: 40px;
+	left: 20px;
+}
+

@@ -1,0 +1,35 @@
+@font-face { font-family: WolfsRain; src: url("../WolfsRain.ttf"); }
+
+a {
+	text-decoration: none;
+	color: white;
+	padding-right: 40px;
+	font-size: 30px;
+	font-family: WolfsRain;
+}
+
+a:hover {
+	color: #6882B2;
+}
+
+p {
+	text-align: center;
+	padding-top: 350px;
+	font-size: 100px;
+	font-family: WolfsRain;
+	color: red;
+	width: 500px;
+	margin: auto;
+}
+
+header {
+	text-align: center;
+	width: 1000px;
+	margin: auto;
+}
+
+html { 
+  background: url(../img/background1.jpg) center fixed; 
+  background-size: cover;
+}
+

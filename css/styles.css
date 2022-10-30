@@ -80,13 +80,6 @@ body
 {
     right: 0;
 }
-.testingthis
-{
-    display: block;
-    height: 0px;
-    width: 0px;
-    background: white;
-}
 .header-index
 {
     border-top: 5px solid #424242;
@@ -132,7 +125,7 @@ body
     width: 20px;
     height: 16px;
 }
-.short-about-box
+#short-about-box
 {
     /* Orientation of the boxes */
     display: grid;
@@ -173,6 +166,7 @@ body
     margin-right: auto; 
     margin-top: 50px;
     margin-bottom: 10px;
+    color: var(--main-color);
 }
 .project-link-text
 {
@@ -414,5 +408,50 @@ body
     .header-nav nav a:hover
     {
         color: var(--main-color);
+    }
+    #short-about-box
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 150px;
+    }
+    .short-about-box-text
+    {
+        max-width: 80%;
+    }
+    .short-about-box-text p
+    {
+        font-size: 20px;
+    }
+    .short-about-box-img img
+    {
+        width: 70%;
+    }
+    .project-title
+    {
+        display: block;
+        text-align: center;
+        max-width: none;
+    }
+    .project-box
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: none;
+        width: 80%;
+    }
+    .footer-content
+    {
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
     }
 }

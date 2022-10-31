@@ -79,6 +79,7 @@ body
 .header-box input:checked ~ .header-nav ul
 {
     right: 0;
+    display: block;
 }
 .header-index
 {
@@ -377,10 +378,11 @@ body
     }
     .header-nav ul
     {
+        display: none;
         justify-content: start;
         flex-direction: column;
         align-items: center;
-        position: fixed;
+        position: absolute;
         background: white;
         border-radius: 10px;
         border: 2px solid #424242;
@@ -452,6 +454,23 @@ body
     {
         flex-direction: column;
         text-align: center;
+        width: 80%;
+    }
+    .about-me-p
+    {
+        max-width: none;
+        width: 80%;
+    }
+    .project-page-box
+    {
+        text-align: center;
+    }
+    .project-page-box img
+    {
+        width: 70%;
+    }
+    .project-page-text
+    {
         width: 80%;
     }
 }

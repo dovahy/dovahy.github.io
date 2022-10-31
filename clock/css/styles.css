@@ -11,6 +11,8 @@ body
     /*background: linear-gradient(to left, green, blue);*/
     background: #181818;
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -188,6 +190,13 @@ body
     width: 10px;
     height: 33%;
     background-color: rgb(255, 255, 255);
+}
+
+.digclock
+{
+    color: white;
+    font-size: 70px;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) 

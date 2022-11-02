@@ -328,6 +328,7 @@ body
 {
     max-width: 100%;
     border-radius: 30px;
+    border: 2px solid var(--main-color);
 }
 .project-page-text
 {
@@ -353,6 +354,10 @@ body
 {
     text-decoration: underline;
     color: var(--main-color-hover)
+}
+.project-page-text li
+{
+    list-style: none;
 }
 
 /* MOBILE VERSION */

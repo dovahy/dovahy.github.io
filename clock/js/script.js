@@ -1,5 +1,5 @@
 setInterval(setClock, 1000)
-setInterval(setDigClock, 10)
+setInterval(setDigClock, 1000)
 
 const hourHand = document.querySelector('[data-hour-hand')
 const minuteHand = document.querySelector('[data-minute-hand')

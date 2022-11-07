@@ -359,6 +359,25 @@ body
 {
     list-style: none;
 }
+.error-page
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 65vh;
+    gap: 20px;
+}
+.error-page a
+{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 30px;
+}
+.error-page a:hover
+{
+    color: var(--main-color-hover);
+}
 
 /* MOBILE VERSION */
 

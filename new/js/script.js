@@ -17,7 +17,7 @@ arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
         // if clicked icon is left, reduce width value from the carousel scroll left else add to it
-        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        carousel.scrollLeft += icon.id == "carousel-left-arrow" ? -firstImgWidth : firstImgWidth;
         setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
     });
 });
@@ -69,12 +69,12 @@ carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-const fixedHeader = document.querySelector('.header-wrap');
-
-const stickyHeader = window.addEventListener('scroll', () => {
-    if (window.scrollY < 300) {
-        fixedHeader.classList.add('sticky');
-    } else {
-        fixedHeader.classList.remove('sticky');
-    }
-});
+//const fixedHeader = document.querySelector('.header-wrap');
+//
+//const stickyHeader = window.addEventListener('scroll', () => {
+//    if (window.scrollY < 300) {
+//        fixedHeader.classList.add('sticky');
+//    } else {
+//        fixedHeader.classList.remove('sticky');
+//    }
+//});

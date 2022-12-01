@@ -1,36 +1,18 @@
-var icon = document.getElementById('mode-icon');
+// Carousel code
 
-icon.onclick = function(){
-    document.body.classList.toggle('dark-theme')
+const carousel = document.querySelector(".image-carousel"),
+firstImg = carousel.querySelectorAll("img")[0],
+arrowIcons = document.querySelectorAll(".section-project-images i");
+
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+const showHideIcons = () => {
+    // showing and hiding prev/next icon according to carousel scroll left value
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
 }
 
-<<<<<<< HEAD
-function changeColor() {
-    var scrollValue = window.scrollY;
-    var header = document.getElementById('topnav-right');
-    console.log(scrollValue)
-    if (scrollValue < 790)
-    {
-        header.classList.remove('changedColor');
-    } else
-    {
-        header.classList.add('changedColor');
-    }
-}
-
-window.addEventListener('scroll', changeColor);
-
-ScrollReveal({
-    reset: true,
-    distance: '60px',
-    duration: 2500,
-    delay: 400
-});
-
-ScrollReveal().reveal('.about-main-title', { delay: 500, origin: 'left' });
-ScrollReveal().reveal('.content-image', { delay: 600, origin: 'bottom' });
-ScrollReveal().reveal('.content-text', { delay: 700, origin: 'right' });
-=======
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
@@ -96,4 +78,3 @@ const stickyHeader = window.addEventListener('scroll', () => {
         fixedHeader.classList.remove('sticky');
     }
 });
->>>>>>> parent of 88cd2f5 (new update + new design page first)

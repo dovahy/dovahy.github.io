@@ -8,23 +8,27 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body id="index">
-    
-    <div class="header-wrap">
-        <div class="left">
-            <a>Florian Swinareck</a>
-        </div> 
-        <ul class="right">
-            <li class="index"><a href="">Home</a></li>
-            <li><a href="#projekte">Projekte</a></li>
-            <li><a href="pages/about.html">About</a></li>
-        </ul>
+
+    <div class="nav-container" id="nav-header">
+        <div class="topnav">
+            <div class="topnav-left">
+                <a id="hover-anim" href=" ">Florian Swinareck</a>
+            </div>
+
+            <div class="topnav-right" id="topnav-right">
+                <a id="hover-anim" class="index" href="#home">Home</a>
+                <a id="hover-anim" href="#projekte">Projekte</a>
+                <a id="hover-anim" href="pages/about.html">About</a>
+            </div>
+        </div>
     </div>
 
-    <div class="start-section">
+    <div class="start-section" id="home">
         <div class="section-div-img">
-            <img src="img/me.png">
+            <img src="img/me2.png">
         </div>
 
         <div class="section-div-text">
@@ -33,37 +37,33 @@
         </div>
     </div>
 
-    <div class="section-border"></div>
+    <div class="section-border" id="projekte"></div>
 
-    <div class="project-section" id="projekte">
+    <div class="project-section">
         <div class="section-project-text-left">
             <h2>PHP & WordPress</h2>
             <h3>Design & Funktionalität</h3>
         </div>
 
         <div class="section-project-text-right">
-            <p>Neben statische Webseiten, habe ich auch dynamische Webseiten entwicklet. PHP und MySQL/jQuery habe ich genutzt für einige interessante Funktionen und dynamische Elemente. WordPress habe ich auch verwendet - vor allem für mein Praktikum in einer WP Agentur. </p>
+            <p>Neben statische Webseiten, habe ich auch dynamische Webseiten entwicklet. PHP und MySQL/jQuery habe ich genutzt für einige interessante Funktionen und dynamische Elemente. WordPress habe ich auch verwendet - vor allem für mein Praktikum in einer WP Agentur.</p>
             <a href="pages/projekte/design1/index.html" class="project-button"><span class="project-arrow">Zum Projekt</span></a>
         </div>
-
     </div>
 
-    <div class="section-project-images">
-        <i id="carousel-left-arrow" class="arrow-solid arrow-left">&#9668;</i>
-        <div class="image-carousel">
-            <img src="img/p3.png" draggable="false">
-            <img src="img/loginphp.png" draggable="false">
-            <img src="img/wpprojekte.jpg" draggable="false">
-            <img src="img/p3.png" draggable="false">
-            <img src="img/loginphp.png" draggable="false">
-            <img src="img/wpprojekte.jpg" draggable="false">
+    <div class="swiper section-project-images">
+        <i class="swiper-left-arrow">◄</i>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/wpprojekte.jpg"></div>
+            <div class="swiper-slide"><img src="img/thuem.jpg"></div>
+            <div class="swiper-slide"><img src="img/p3.png"></div>
+            <div class="swiper-slide"><img src="img/loginphp.png"></div>
         </div>
-        <i id="carousel-right-arrow" class="arrow-solid arrow-right">&#9658;</i>
+        <i class="swiper-right-arrow">►</i>
+        <div class="swiper-pagination"></div>
     </div>
 
     <div class="section-border"></div>
-
-    <script src="js/script.js"></script>
 
     <div class="project-section">
         <div class="section-project-text-left">
@@ -72,11 +72,79 @@
         </div>
 
         <div class="section-project-text-right">
-            <p>Neben statische Webseiten, habe ich auch dynamische Webseiten entwicklet. PHP und MySQL/jQuery habe ich genutzt für einige interessante Funktionen und dynamische Elemente. WordPress habe ich auch verwendet - vor allem für mein Praktikum in einer WP Agentur. </p>
+            <p>Hier sind einige JavaScript basierende Projekte, weniger Website Design und dafür mehr funktionalität. JavaScript, sowohl auch Datenbanken, jQuery und React/ThreeJS, waren Teil meines Studiums. In meiner Freizeit habe ich mich mit diesen Sprachen weiterhin auseinandergesetzt.</p>
             <a href="" class="project-button"><span class="project-arrow">Zum Projekt</span></a>
         </div>
-
     </div>
+
+    <div class="swiper section-project-images">
+        <i class="swiper-left-arrow">◄</i>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/p1.png"></div>
+            <div class="swiper-slide"><img src="img/p5.png"></div>
+            <div class="swiper-slide"><img src="img/tictactoe.png"></div>
+            <div class="swiper-slide"><img src="img/api.png"></div>
+        </div>
+        <i class="swiper-right-arrow">►</i>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="section-border"></div>
+
+    <div class="project-section">
+        <div class="section-project-text-left">
+            <h2>AdobeXD</h2>
+            <h3>Design Entwürfe mit AdobeXD</h3>
+        </div>
+
+        <div class="section-project-text-right">
+            <p>Der Umgang mit AdobeXD ist mir nicht fremd. Im Laufe meines Studiums habe ich einige UI Entwürfe für Spiele und andere Programme entwickelt. AdobeXD eignet sich auch ideal für Website Designs.</p>
+            <a href="" class="project-button"><span class="project-arrow">Zum Projekt</span></a>
+        </div>
+    </div>
+
+    <div class="swiper section-project-images">
+        <i class="swiper-left-arrow">◄</i>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/p4.png"></div>
+        </div>
+        <i class="swiper-right-arrow">►</i>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="section-border"></div>
+
+    <div class="project-section">
+        <div class="section-project-text-left">
+            <h2>Unity</h2>
+            <h3>Unity Projekte in C#</h3>
+        </div>
+
+        <div class="section-project-text-right">
+            <p>Ich habe Projekte auch mit anderen Programmiersprachen und Umgebungen, dazu gehören einige Unity Projekte. Einige wurden mit einem Team erstellt, einige sind Eigenprojekte. Diese Projekte sind hauptsächlich Games, entwickelt in C# mit der Unity Engine. </p>
+            <a href="" class="project-button"><span class="project-arrow">Zum Projekt</span></a>
+        </div>
+    </div>
+
+    <div class="swiper section-project-images">
+        <i class="swiper-left-arrow">◄</i>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/p4.png"></div>
+            <div class="swiper-slide"><img src="img/unity1.png"></div>
+            <div class="swiper-slide"><img src="img/unity2.png"></div>
+            <div class="swiper-slide"><img src="img/unity3.png"></div>
+        </div>
+        <i class="swiper-right-arrow">►</i>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="section-border"></div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

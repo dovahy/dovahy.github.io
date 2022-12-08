@@ -7,7 +7,7 @@ icon.onclick = function(){
 function changeColor() {
     var scrollValue = window.scrollY;
     var header = document.getElementById('topnav-right');
-    if (scrollValue < 870)
+    if (scrollValue < 790)
     {
         header.classList.remove('changedColor');
     } else

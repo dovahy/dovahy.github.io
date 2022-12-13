@@ -94,7 +94,7 @@ ScrollReveal({
     reset: false,
     distance: '400px',
     duration: 2500,
-    delay: 400
+    delay: 300
 });
 
 ScrollReveal().reveal('.project-section', { delay: 400, origin: 'left' });

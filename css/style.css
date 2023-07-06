@@ -476,6 +476,17 @@ footer
     min-height: 100vh;
 }
 
+/* MOBILE VERSION */
+
+@media screen and (max-width: 600px) {
+
+    .nav-container {
+        display: flex;
+    }
+}
+    
+
+
 /* .left-arrow
 {
     box-sizing: border-box;

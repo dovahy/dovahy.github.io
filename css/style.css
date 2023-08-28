@@ -88,6 +88,73 @@ body
 {
     margin: 30px 80px 30px 15px;
 }
+#scroll-button a 
+    {
+        padding-top: 70px;
+    }
+    #scroll-button a span 
+    {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb05 1.5s infinite;
+        animation: sdb05 1.5s infinite;
+        box-sizing: border-box;
+    }
+    @-webkit-keyframes sdb05 
+    {
+        0% 
+        {
+            -webkit-transform: rotate(-45deg) translate(0, 0);
+            opacity: 0;
+        }
+        50% 
+        {
+            opacity: 1;
+        }
+        100% 
+        {
+            -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            opacity: 0;
+        }
+    }
+    @keyframes sdb05 {
+        0% 
+        {
+            transform: rotate(-45deg) translate(0, 0);
+            opacity: 0;
+        }
+        50% 
+        {
+            opacity: 1;
+        }
+        100% 
+        {
+            transform: rotate(-45deg) translate(-20px, 20px);
+            opacity: 0;
+        }
+}
+.scroll a 
+{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
 #hover-anim
 {
     display: inline-block;
@@ -482,10 +549,61 @@ footer
 
     .nav-container {
         display: flex;
+        justify-content: center;
+    }
+    .topnav-left {
+        float: none;
+        min-height: 50px;
+        justify-content: center;
+    }
+    .topnav a {
+        margin: 10px;
+    }
+    .topnav a:last-child {
+        margin: 10px;
+    }
+    .topnav-left a {
+        margin: 0;
+    }
+    .topnav-right {
+        float: none;
+        min-height: 50px;
+    }
+    .start-section {
+        display: block;
+        min-width: 0;
+        width: auto;
+    }
+    .section-div-img {
+        justify-content: center;
+    }
+    .section-div-img img {
+        width: 200px;
+        height: 200px;
+    }
+    .section-div-text {
+        
+    }
+    .section-div-text p {
+        margin: 10px auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    .section-div-text h1 {
+        font-size: 40px;
+        margin: 10px auto;
+    }
+    .project-section {
+        display: flex;
+        min-width: 0;
+        width: auto;
+    }
+    .section-about {
+        display: flex;
+        min-width: 0;
+        width: auto;
     }
 }
-    
-
 
 /* .left-arrow
 {

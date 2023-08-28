@@ -1,0 +1,232 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+}
+p
+{
+text-align: justify;
+}
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../../../fonts/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../../../../fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../../fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../../../fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../../fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  
+  /* montserrat-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../../../../fonts/montserrat-v25-latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../../../../fonts/montserrat-v25-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../../fonts/montserrat-v25-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../../fonts/montserrat-v25-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../../../../fonts/montserrat-v25-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../../fonts/montserrat-v25-latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  
+  /* montserrat-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../../../../fonts/montserrat-v25-latin-800.eot'); /* IE9 Compat Modes */
+    src: url('../../../../fonts/montserrat-v25-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../../../fonts/montserrat-v25-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../../../fonts/montserrat-v25-latin-800.woff') format('woff'), /* Modern Browsers */
+         url('../../../../fonts/montserrat-v25-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../../../fonts/montserrat-v25-latin-800.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+:root
+{
+    --main-color: red;
+}
+body 
+{
+    font-family: 'Montserrat';
+    /* background-image: url("../img/bg.jpeg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed; for Picture*/ 
+
+    background: #001220;
+}
+#backToTop
+{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffffff70;
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    border: none;
+    text-decoration: none;
+}
+#backToTop i 
+{
+    color: #fff;
+    margin: 0;
+    position: relative;
+    font-size: 19px;
+}
+#backToTop:hover
+{
+    background: #ffffff90;
+    cursor: pointer;
+}
+#backToTop:hover i 
+{
+    bottom: 5px;
+}
+header
+{
+    max-width: 100%;
+    display: flex;
+    background: #008950;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: #ffffff 1px solid;
+}
+header div
+{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+header a 
+{
+    text-decoration: none;
+    color: white;
+}
+.wave 
+{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.wave-text
+{
+    width: 100%;
+    color: #ffffff; 
+    display: inline-block;
+    align-self: flex-end;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+.layer1 
+{
+    background-image: url("../img/wave1.svg");
+}
+.layer2 
+{
+    background-image: url("../img/wave2.svg");
+}
+.single-layer-top
+{
+    background-image: url("../img/topwave1.svg");
+    margin-top: -1px
+}
+.single-layer-top2
+{
+    background-image: url("../img/topwave2.svg");
+    margin-top: -1px
+}
+.centerdiv
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 100px;
+    z-index: 0;
+}
+.bg
+{
+    background-image: url("../img/bg-poly.svg");
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-position: center;
+}
+.textdiv 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #008950;
+    width: 50%;
+    padding: 25px;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #ffffff solid;
+    border-bottom: 1px #ffffff solid;
+    border-radius: 0px 0px 25px 25px;
+    z-index: 1;
+}
+.color-green
+{
+    background: #00ff95 !important;
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/p1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 300px;
+    width: 50%;
+    padding: 25px;
+    border-top: 1px #ffffff solid;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #ffffff solid;
+    border-radius: 25px 25px 0px 0px;
+}
+.title-pic2
+{
+    background-image: url("../img/p2.png") !important;
+}
+.title h1 
+{
+    color: #ffffff;
+    text-shadow: #ffffff;
+    font-size: 42px;
+}
+.textdiv p 
+{
+    color: #000000;
+    font-size: 18px;
+    line-height: 2;
+}
+.span-text
+{
+    color: #ffffff; 
+    text-shadow: -1px -1px 0 #F8AA4A, 1px -1px 0 #F8AA4A, -1px 1px 0 #F8AA4A, 1px 1px 0 #F8AA4A;
+}
+.span-text:hover
+{
+    color: #F8AA4A;
+    text-shadow: none;
+}

@@ -54,7 +54,8 @@
 }
 html
 {
-    scroll-behavior:smooth
+    scroll-behavior:smooth;
+    background-color: #222224;
 }
 #index .index
 {
@@ -64,13 +65,12 @@ body
 {
     font-family: 'Montserrat';
     color: var(--text-color);
-    background-color: #222224;
     overflow-x: hidden;
 }
 .nav-container
 {
     width: 100%;
-    min-height: 100px;
+    min-height: 75px;
     display: flex;
     align-items: center;
 }
@@ -93,6 +93,18 @@ body
     padding: 12px 32px;
     margin: 0 50px 0 15px;
     text-align: center;
+}
+.navigation a:last-child:hover
+{
+    color: #222224;
+}
+.navigation a:hover
+{
+    color: var(--main-color-hover);
+}
+.content
+{
+    background-image: url(../img/bg.svg);
 }
 .pic-container
 {
@@ -141,7 +153,9 @@ body
 }
 .pic-text button:hover
 {
-    background-color: var(--main-color-hover);
+    color: #222224;
+    text-shadow: none;
+    cursor: pointer;
 }
 .about-container
 {
@@ -156,6 +170,8 @@ body
     width: 400px;
     margin: -50px;
     z-index: 2;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px #222224;
 }
 .about-picture img
 {
@@ -173,7 +189,63 @@ body
     color: black;
     font-size: 26px;
     border-radius: 5px;
+    box-shadow: 0 0 5px 2px #222224;
     text-align: left;
+}
+.leistungen-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.accordion
+{
+    height: auto;
+    width: 1000px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px #222224;
+}
+.accordion h2
+{
+    color: var(--main-color);
+    font-size: 26px;
+    font-weight: 400;
+}
+details
+{
+    background-color: #222224;
+    margin-top: 25px;
+	margin-bottom: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+}
+details:hover
+{
+    border: 1px solid var(--main-color-hover);
+}
+details > summary 
+{
+    color: var(--main-color);
+	padding: 5px 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+details > p 
+{
+    padding: 5px 10px 10px 20px;
+	color: #ddd;
+	font-size: 1.1em;
+}
+details > ul
+{
+    padding: 5px 10px 25px 35px;
+}
+ul > li
+{
+    margin-top: 10px;
 }
 .works-container
 {
@@ -181,6 +253,7 @@ body
     align-items: center;
     justify-content: center;
     margin-top: 200px;
+    padding-bottom: 200px;
 }
 .works-text
 {
@@ -191,11 +264,11 @@ body
     color: black;
     font-size: 26px;
     border-radius: 5px;
+    box-shadow: 0 0 5px 2px #222224;
     text-align: left;
 }
 footer
 {
-    margin-top: 100px;
     background-color: #131314;
     min-height: 100px;
 }

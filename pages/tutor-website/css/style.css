@@ -267,6 +267,14 @@ ul > li
     box-shadow: 0 0 5px 2px #222224;
     text-align: left;
 }
+.outlook-calendar
+{
+    width: 100%;
+    height: 1000px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    margin-top: 25px;
+}
 footer
 {
     background-color: #131314;

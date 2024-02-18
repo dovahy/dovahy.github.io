@@ -1,0 +1,23 @@
+[
+    {
+      "question": "Was ist der Wert von 3 * 5?",
+      "options": ["8", "15", "12", "20"],
+      "answer": "15"
+    },
+    {
+      "question": "Löse nach x auf: 2x + 3 = 11",
+      "options": ["x = 4", "x = 3", "x = 0", "x = 1"],
+      "answer": "x = 4"
+    },
+    {
+      "question": "Berechne den Flächeninhalt eines Rechtecks mit der Länge 4 cm und der Breite 6 cm.",
+      "options": ["24cm²", "30cm²", "10cm²", "12cm²"],
+      "answer": "24cm²"
+    },
+    {
+      "question": "Vereinfache: (x+3)².",
+      "options": ["x² + 6x + 9", "x² + 2x + 4", "x + 6 + 9", "x² - 9"],
+      "answer": "x² + 6x + 9"
+    }
+]
+  
